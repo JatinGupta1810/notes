@@ -1,0 +1,369 @@
+Java Questions:
+
+Java 8 features
+Internal working changes of hashmap in java8(Tree map)
+Garbage collection in java 8 changes
+use of default method in interface
+diamond problem
+how to call default method of interface from child class
+what api gateway does
+Permgen vs Metaspace in Java
+Introduction to Java Logging
+Types of scope in bean
+Spring Singleton VS Java Singleton
+
+named query and native query
+Types of JPA Queries
+
+distributed transaction
+Transaction Management
+
+===============
+Java 8 features
+===============
+
+Interface Default and Static Methods:-
+--------------------------------------
+
+Before Java 8, interfaces could have only public abstract methods. It was not possible to add new functionality to the existing 
+interface without forcing all implementing classes to create an implementation of the new methods, nor was it possible to create 
+interface methods with an implementation.
+
+Starting with Java 8, interfaces can have static and default methods that, despite being declared in an interface, have a defined 
+behavior.
+
+Backward Compatablity - default
+Default Implementation - static
+
+Static Method:-
+	It can't be override by implementing class and call by Interface only.
+	
+Default Method:-
+	Default methods are declared using the new default keyword. These are accessible through the instance of the implementing class 
+	and can be overridden.
+	
+Method References:-
+-------------------
+
+Method reference can be used as a shorter and more readable alternative for a lambda expression that only calls an existing method. 
+There are four variants of method references.
+
+Reference to a Static Method:-
+	The reference to a static method holds the syntax ContainingClass::methodName.
+
+Reference to an Instance Method:-
+	The reference to an instance method holds the syntax containingInstance::methodName.
+	
+Reference to a Constructor:-
+	A reference to a constructor takes the syntax ClassName::new.
+
+Optional<T>:-
+-------------
+
+Before Java 8, developers had to carefully validate values they referred to because of the possibility of throwing the NullPointerException 
+(NPE). All these checks demanded a pretty annoying and error-prone boilerplate code.
+
+Java 8 Optional<T> class can help to handle situations where there is a possibility of getting the NPE. It works as a container for the object 
+of type T. It can return a value of this object if this value is not a null. When the value inside this container is null, it allows doing some 
+predefined actions instead of throwing NPE.
+
+
+Lambda Expressions:-
+--------------------
+Lambda expression helps us to write our code in functional style. It provides a clear and concise way to implement SAM interface(Single Abstract 
+Method)/(functional interface) by using an expression. It is very useful in collection library in which it helps to iterate, filter and extract data.
+
+Functional Interface:-
+----------------------
+
+An Interface that contains only one abstract method is known as functional interface. It can have any number of default and static methods. It can also 
+declare methods of object class.
+
+Functional interfaces are also known as Single Abstract Method Interfaces (SAM Interfaces).
+
+Date/Time API:-
+---------------
+Java has introduced a new Date and Time API since Java 8. The java.time package contains Java 8 Date and Time classes.
+eg: LocalDate, LocalTime, LocalDateTime,...
+These comes because of thread safety, difficult time zone handling
+
+
+Stream API:-
+------------
+Java 8 java.util.stream package consists of classes, interfaces and an enum to allow functional-style operations on the elements. It performs lazy computation. 
+So, it executes only when it requires.
+
+These are the majoar changes in java8 and other changes also which is not required
+
+
+
+============================================
+Internal working changes of hashmap in java8
+============================================
+
+Hash collision degrades the performance of HashMap significantly. With this new approach, existing applications can expect performance improvements in case they 
+are using HashMaps having large number of elements by simply upgrading to Java 8.
+
+Hash collisions have negative impact on the lookup time of HashMap. When multiple keys end up in the same bucket, then values along with their keys are placed in 
+a linked list. In case of retrieval, linked list has to be traversed to get the entry. In worst case scenario, when all keys are mapped to the same bucket, the 
+lookup time of HashMap increases from O(1) to O(n).
+
+Java 8 has come with the following improvements/changes of HashMap objects in case of high collisions. The alternative String hash function added in Java 7 has 
+been removed.
+Buckets containing a large number of colliding keys will store their entries in a balanced tree instead of a linked list after certain threshold is reached.
+Above changes ensure performance of O(log(n)) in worst case scenarios (hash function is not distributing keys properly) and O(1) with proper hashCode().
+
+How linked list is replaced with binary tree?
+
+	In Java 8, HashMap replaces linked list with a binary tree when the number of elements in a bucket reaches certain threshold. While converting the list to 
+	binary tree, hashcode is used as a branching variable. If there are two different hashcodes in the same bucket, one is considered bigger and goes to the 
+	right of the tree and other one to the left. But when both the hashcodes are equal, HashMap assumes that the keys are comparable, and compares the key to 
+	determine the direction so that some order can be maintained. It is a good practice to make the keys of HashMap comparable.
+
+	This JDK 8 change applies only to HashMap, LinkedHashMap and ConcurrentHashMap.
+	
+=====================================
+Garbage collection changes in java8:-
+=====================================
+
+Memory leaks:- means memory is completely filled, no space to store more objects
+
+Before understanding about chnages in GC lets understand about working of GC:-
+
+Automatic Garbage collection is a process of looking at the Heap memory, identifying(also known as “marking”) the unreachable objects, and destroying them with 
+compaction. An issue with this approach is that, as the number of objects increases, the Garbage Collection time keeps on increasing, as it needs to go through 
+the entire list of objects, looking for the unreachable object which decrease JVM performance.
+
+To increase JVM performance we came up with a new strategy called Generational Garbage Collection(GGC)
+
+GCC divided into 3 generations:-
+Young G.
+Old/Tenured G.
+Permanent G.
+
+Young G
+When a new object is created it goes to YG storage which has its own minor GC and check which object are alive and dead/unreachable.
+
+Old G.
+After come threshold time these object moves to OG whcih has major GC to deleted/unreachable dead objects
+
+Permanent G.
+It basically stored metadata of class and method. This includes all the static methods, primitive variables, and references to the static objects.
+
+
+Java8 changes
+Since permgen(Permanent G) has fixed memory so we can faced OutOfMemoryException because it uses JVM heap meomory which is fixed.
+In java 8 permspace is replaced by metaspace.
+Metaspace:-
+
+	It has the same role as PermGen which is to store class metadata. Metaspace is not part of the JVM heap, but is allocated in native operating system memory(Native memory). 
+	It can auto-increase as needed to load additional class metadata.
+	
+	
+Refer:- https://www.linkedin.com/pulse/java-memory-permgen-vs-metaspace-incus-data-pty-ltd-drxbe/
+
+=================
+Diamond problem:-
+=================
+
+	Diamond Problem is a problem faced during Multiple Inheritance in Java.
+	Talking about Multiple inheritance is when a child class is inherits the properties from more than one parents and the methods for the parents 
+	are same (Method name and parameters are exactly the same) then child gets confused about which method will be called. This problem in Java is 
+	called the Diamond problem.
+	
+	To overcome this situation we used interface because the implementation of that same method will be in childClass.
+	
+Catch:- 
+	After Java8 we have default method in interface than if two interface have same method then which child inherit is difficult.
+	So, in java 8 we can inherit particular interface method by using InterfaceName.super.methodName();
+	
+interface ParentA {
+
+	default void fun() {
+		System.out.println("Fun by A");
+	}
+}
+
+interface ParentB {
+
+	default void fun() {
+		System.out.println("Fun by B");
+	}
+}
+
+class ChildAB implements ParentA, ParentB {
+
+	@Override
+	public void fun() {
+		ParentA.super.fun();
+	}
+
+}
+
+
+===================================
+What Does API gateway does(APIGEE)?
+===================================
+
+An API Gateway is a server that acts as an entry point for an application programming interface (API). It is a crucial component 
+in microservices architecture and distributed systems, providing a centralized point for managing and controlling communication 
+between different services. Here are the key functions that an API Gateway performs:
+
+Request Routing:
+	API Gateways handle incoming requests and route them to the appropriate services or microservices based on predefined rules 
+	or configurations. This allows for flexible and dynamic routing of requests to different backend services.
+
+Load Balancing:
+	In a distributed system with multiple instances of microservices, an API Gateway can distribute incoming requests across these 
+	instances to ensure optimal load balancing. This helps in improving the performance, scalability, and availability of the overall 
+	system.
+
+Protocol Translation:
+	API Gateways can translate between different communication protocols. For example, it can handle requests in HTTP and translate them 
+	into the appropriate protocol if the backend service communicates using a different protocol.
+
+Authentication and Authorization(AccessToken and JWT):
+	API Gateways often manage authentication and authorization for incoming requests. They can enforce security measures, such as validating 
+	API keys, OAuth tokens, or other authentication mechanisms, and authorize requests based on defined policies.
+
+Rate Limiting:
+	API Gateways can enforce rate limiting policies to control the number of requests a client can make within a specified time period. 
+	This helps prevent abuse, ensures fair usage, and protects backend services from being overwhelmed.
+
+Caching:
+	To improve performance and reduce the load on backend services, API Gateways can implement caching mechanisms. Responses from backend 
+	services can be cached, and subsequent identical requests can be served directly from the cache without forwarding the request to the 
+	backend.
+	
+Logging and Monitoring:
+	API Gateways often provide logging and monitoring capabilities, allowing administrators to track and analyze incoming requests, responses, 
+	and overall system performance. This is essential for troubleshooting, performance optimization, and gaining insights into system behavior.
+
+Error Handling:
+	API Gateways handle error responses from backend services, allowing for consistent error handling and presenting meaningful error messages 
+	to clients. This simplifies error management for developers consuming the API.
+
+Security and SSL Termination:
+	API Gateways can manage security aspects such as SSL termination, handling encryption and decryption for incoming and outgoing requests. 
+	This simplifies the deployment and management of SSL/TLS certificates for the entire system.
+
+
+============================
+Introduction to Java Logging
+============================
+
+Logging is a powerful aid for understanding and debugging a program’s run-time behavior. Logs capture and persist the important data and make 
+it available for analysis at any point in time.
+
+Log4j 2:-
+	Log4j 2 is a new and improved version of the Log4j logging framework. The most compelling improvement is the possibility of asynchronous 
+	logging. Log4j 2 requires the following libraries:
+
+	<dependency>
+		<groupId>org.apache.logging.log4j</groupId>
+		<artifactId>log4j-api</artifactId>
+		<version>2.6.1</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.logging.log4j</groupId>
+		<artifactId>log4j-core</artifactId>
+		<version>2.6.1</version>
+	</dependency>
+
+
+
+======================
+Types of scope in bean
+======================
+
+
+The latest version of the Spring framework defines 6 types of scopes:
+	singleton
+	prototype
+	request
+	session
+	application
+	websocket
+
+Singleton Scope:-
+	When we define a bean with the singleton scope, the container creates a single instance of that bean; all requests for that bean name 
+	will return the same object, which is cached. Any modifications to the object will be reflected in all references to the bean. This 
+	scope is the default value if no other scope is specified.
+	
+	@Component()
+	@Scope("singleton")
+	public class Person {
+		private String name;
+
+		// standard constructor, getters and setters
+	}
+	
+Prototype Scope:-
+	A bean with the prototype scope will return a different instance every time it is requested from the container. It is defined by setting 
+	the value prototype to the @Scope annotation in the bean definition:
+
+	@Component()
+	@Scope("prototype")
+	public class Person {
+		private String name;
+
+		// standard constructor, getters and setters
+	}
+	
+Rest are four additional scopes that are only available in a web-aware application context. We use these less often in practice.
+
+The request scope creates a bean instance for a single HTTP request, 
+while the session scope creates a bean instance for an HTTP Session.
+
+The application scope creates the bean instance for the lifecycle of a ServletContext, 
+and the websocket scope creates it for a particular WebSocket session.
+
+==================================
+Spring Singleton VS Java Singleton
+==================================
+
+The Java singleton is scoped by the Java class loader(JVM), the Spring singleton is scoped by the container context.
+In java you have to create singleton class but in spring by defailt the class is singleton
+
+
+
+=============
+DesignPattern
+=============
+
+A design patterns are well-proved solution for solving the specific problem/task.
+Advantage of design pattern:
+	They are reusable in multiple projects.
+	They provide the solutions.
+	
+	
+Core Java Design Patterns
+In core java, there are mainly three types of design patterns, which are further divided into their sub-parts:
+
+1.Creational Design Pattern
+	Factory Pattern
+	Singleton Pattern
+	Prototype Pattern
+	
+2. Structural Design Pattern
+	Adapter Pattern
+	Bridge Pattern
+	Composite Pattern
+	
+3. Behavioral Design Pattern
+	Iterator Pattern
+	Strategy Pattern
+	Template Pattern
+	
+	
+============================
+Named query and Native query
+============================
+
+
+==============================
+@RestController VS @Controller
+==============================
+
+A Controller returns a View object that is responsible for rendering a web page that can be viewed by the user. A RestController, on the 
+other hand, returns a ResponseBody(JSON) object that contains data in a format such as JSON or XML that can be consumed by other applications. 

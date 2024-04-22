@@ -1,0 +1,137 @@
+
+Note:-
+An X.509 certificate is basically a public key
+
+
+One Way SSL and Two way SSL
+
+Before understanding this concept we first learn CA
+How CA authority works?
+-----------------------
+
+A certificate authority (CA) is a trusted entity that issues Secure Sockets Layer (SSL) certificates. These digital 
+certificates are data files used to cryptographically link an entity with a public key. Web browsers use them to 
+authenticate content sent from web servers, ensuring trust in content delivered online.
+
+A digital certificate primarily acts as a credential to validate the identity of the entity it is issued to. It also 
+encrypts and secures communication over the internet and maintains the integrity of documents signed with it, ensuring 
+third parties cannot alter the documents while they are in transit.
+
+A digital certificate contains information about the entity to which it has been issued. Typically, that includes its 
+name, contact information, organization, domain name, public key, certificate issue and expiry date, and more. The name 
+of the issuing CA and its digital signature are also normally included in the digital certificate.
+
+In the digital certificate, the digital signature proves that a trusted CA issued the certificate and it was not modified 
+by any other party.
+
+How SSL/TLS certificates work
+-----------------------------
+
+The Transport Layer Security (TLS) protocol uses SSL certificates to encrypt and authenticate data streams for Hypertext 
+Transfer Protocol Secure (HTTPS). The SSL cryptographic protocol facilitates secure encrypted connections over the internet 
+via web browsers that connect to websites. SSL works on top of HTTP to create an HTTPS connection.
+
+SSL certificates are sometimes called SSL/TLS certificates or simply TLS certificates. TLS is an upgraded version of SSL.
+
+Imp
+===
+When a web browser initiates a secure connection over HTTPS, the SSL/TLS digital certificate is sent to the web browser. 
+The browser checks the information in the certificate and authenticates it against its own root certificate store. This 
+is how the certificate ensures secure, encrypted connections between a user's browser and the organization's web server 
+or a website's web server.
+
+When this feature is working, users will not see warning messages in their browser, such as "not sure" or "your connection 
+is not private." Those are displayed for insecure websites.
+
+All major browsers, including those provided by Microsoft (Internet Explorer, Edge), Google (Chrome), Apple (Safari) and 
+Mozilla (Firefox) all maintain their own web browser root certificate stores. This is where they post the root certificates 
+of CAs the publishers have decided their browser will trust.
+
+When the applicant send request to CA after verifying the data, it will signed the certificate provide by server with its private
+key and the public key is already present by the browser which used to verify the certificate.
+
+Note:- Private key is always keep secret and we dont share it to anyone including CA.
+
+
+Reference:-
+https://www.techtarget.com/searchsecurity/definition/certificate-authority#:~:text=The%20applicant%20then%20sends%20the,the%20certificate%20to%20the%20applicant.
+
+
+
+SSL fundamentally works with the following concepts:-
+	1. Asymmetric Cryptography
+	2. Symmetric Cryptography
+
+
+
+Asymmetric Cryptography:-
+	>We use private key and public key for communcation. Public key is shared who is interetsed to communicate.
+	>In the asymmetric cryptography, the sender encrypt data with the receiver's public key and send it to the receiver. 
+	The receiver decrypts it using the related private key.
+	
+Symmetric Cryptography:-
+	In the symmetric cryptography, there is only one key which encrypts and decrypts the data. Both sender and receiver 
+	should have this key, which is only known to them.
+	
+How One way SSL works:-(TLS Handshake)
+
+1. The client sends a "client hello" message. This includes the client's SSL version number, cipher(algorithm) settings, session-specific 
+data and other information that the server needs to communicate with the client using SSL.
+2. The server responds with a "server hello" message. This includes the server's SSL version number, cipher settings, 
+session-specific data, an SSL certificate with a public key and other information that the client needs to communicate with 
+the server over SSL.
+3. The client verifies the server's SSL certificate from CA (Certificate Authority) and authenticates the server. If the 
+authentication fails, then the client refuses the SSL connection and throws an exception. If the authentication succeeds, 
+then proceed to step 4.
+4. The client creates a session key, encrypts it with the server's public key and sends it to the server. If the server has 
+requested client authentication (mostly in server to server communication), then the client sends his own certificate to 
+the server.
+5. The server decrypts the session key with its private key and sends the acknowledgement to the client encrypted with the session key.
+6. At the end of the SSL handshake, both the client and the server have a valid session key which they will use to encrypt or 
+decrypt actual data. The public key and the private key will not be used any more after this.
+
+Note:- 
+	Asymmetric takes more CPU consumption as compared to symmetric.
+	When we hit any url in browser we can see padlock sign, when we click on it, we see certificate with server's public key which is shared
+	by server when we hit url.
+	
+Reference:-
+https://www.tutorialsteacher.com/https/how-ssl-works
+https://www.tutorialsteacher.com/https/what-is-ssl-certificate
+
+How Two way SSL works:-(Mutual Handshake)
+
+It is same as the One way SSL but here server is also validate client certificate. After client validate server certificate the client send its 
+certifiate with its publicc key and it will be validate by server using the CA and get public key of client.
+Now both client and server has each other public key when helps to encrypt data and data will be decrypt by their respective 
+private key in server or client side
+
+
+SSL keystore
+------------
+	It is a key database file designated as a keystore. It contains the SSL certificate.
+
+SSL truststore
+--------------
+	It is a key database file designated as a truststore. The SSL truststore contains the list of signer certificates 
+	(CA certificates) that define which certificates the SSL protocol trusts. Only a certificate issued by one of these 
+	listed trusted signers is accepted.
+
+
+One-way SSL authentication
+--------------------------
+	Requires a keystore and certificate only on the SSL server side (such as the Security Directory Server) and a truststore 
+	only on the SSL client side (such as the Security Identity Manager Server).
+	
+Two-way SSL authentication (client-side authentication)
+-------------------------------------------------------
+	Requires a keystore with a certificate and a truststore that contains the signer of the certificate that issued the other 
+	certificate on both the SSL server and client.
+	
+
+Reference:-
+https://yasarayasawardhana.medium.com/beginners-guide-to-key-stores-and-trust-stores-f7fa6d70ca2e
+
+Note:-
+	Apart from those, public keys can verify or encrypt data, whereas the private keys can sign or decrypt data. 
+	Secret keys can perform these functions as well. 

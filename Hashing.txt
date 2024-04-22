@@ -1,0 +1,115 @@
+Hashtable:-
+-----------
+->Hashtable is a legacy class available since jdk 1.1 which uses synchronized methods to achieve thread safety. 
+At a time only one thread can read or write into Hashtable. In other word, thread acquires lock on entire 
+Hashtable instance. Hence its performance is quite slow and we can not utilize the advantages of multithreaded architecture.
+	
+->Another point to note about Hashtable is that it does not allow null keys or values whereas HashMap allows one null key and 
+any number of null values.
+	
+Collections.SynchronizedMap:-
+-----------------------------
+->SynchronizedMap is a static inner class of utility class java.util.Collections. It is quite similar to Hashtable 
+and it also acquires lock on entire Map instance. It is not a legacy class like Hashtable and  it was introduced in jdk 1.5.
+
+->It provides functionality to convert any thread-unsafe Map implementation to thread-safe implementation using 
+Collections.synchronizedMap(Map map) static method
+	
+ConcurrentHashMap:-
+-------------------
+->Hashtable and SynchronizedMap both acquires lock on entire Map object which provides thread-safety, but not good performance 
+as at a time only one thread can access that Map instance.
+
+->To overcome this issue, ConcurrentHashMap was introduced in Java 5 along with other concurrent classes like CopyOnWriteArrayList,.. 
+within java.util.Concurrent package.
+
+->ConcurrentHashMap divides the Map instance into different segments. And each thread acquires lock on each segment. By default 
+it allows 16 threads to access it simultaneously without any external synchronization i.e. by default concurrency level is 16. 
+We can also increase or decrease the default concurrency level while creating ConcurrentHashMap by using below constructor :
+	ConcurrentHashMap(int initialCapacity, float loadFactor, int concurrencyLevel)
+	
+	
+	
+ImageLink:-
+		https://codepumpkin.com/wp-content/uploads/2017/09/ConcurrentHashMap.jpg.webp
+
+
+Key Difference Between HashMap and HashTable:-
+----------------------------------------------
+The main difference between HashMap and HashTable is their approach to synchronization and thread safety. While 
+HashTable is inherently synchronized, ensuring that only one thread can access it at a time, HashMap is non-synchronized, 
+allowing simultaneous access by multiple threads. This makes HashMap generally faster in single-threaded scenarios, 
+due to the absence of synchronization overhead.
+
+
+Fail Fast and Non Fail Fast(Fail Safe) Iterators:-
+-------------------------------------------------
+Concurrent Modification in programming means to modify an object concurrently when another task is already running over it. 
+For example, in Java to modify a collection when another thread is iterating over it. Some Iterator implementations 
+(including those of all the general purpose collection implementations provided by the JRE) may choose to throw 
+ConcurrentModificationException if this behavior is detected.
+
+
+Fail Fast:-
+-----------
+Iterators in java are used to iterate over the Collection objects.Fail-Fast iterators immediately throw 
+ConcurrentModificationException if there is structural modification of the collection. Structural modification 
+means adding, removing any element from collection while a thread is iterating over that collection. 
+Iterator on ArrayList, HashMap classes are some examples of fail-fast Iterator.
+
+
+Important points :
+->These iterators throw ConcurrentModificationException if a collection is modified while iterating over it.
+->They use original collection to traverse over the elements of the collection.
+->These iterators don’t require extra memory.
+	Ex : Iterators returned by ArrayList, Vector, HashMap.
+
+
+
+Non Fail Fast(Fail Safe):-
+--------------------------
+Fail-Safe iterators don’t throw any exceptions if a collection is structurally modified while iterating over it. This is 
+because, they operate on the clone of the collection, not on the original collection and that’s why they are called fail-safe 
+iterators. Iterator on CopyOnWriteArrayList, ConcurrentHashMap classes are examples of fail-safe Iterator.
+
+
+First of all, there is no term as fail-safe given in many places as Java SE specifications does not use this term. I am using 
+this term to demonstrate the difference between Fail Fast and Non-Fail Fast Iterator. These iterators make a copy of the 
+internal collection (object array) and iterates over the copied collection. Any structural modification done to the iterator 
+affects the copied collection, not original collection. So, original collection remains structurally unchanged. 
+
+Important points :
+->Fail-safe iterators allow modifications of a collection while iterating over it.
+->These iterators don’t throw any Exception if a collection is modified while iterating over it.
+->They use copy of original collection to traverse over the elements of the collection.
+->These iterators require extra memory for cloning of collection. 
+	Ex : ConcurrentHashMap, CopyOnWriteArrayList.
+
+The major difference is fail-safe iterator doesn’t throw any Exception, contrary to fail-fast Iterator.This is because they 
+work on a clone of Collection instead of the original collection and that’s why they are called as the fail-safe iterator.
+
+Collisions in the HashMap:-
+---------------------------
+->A collision, or more specifically, a hash code collision in a HashMap, is a situation where two or more key objects produce 
+the same final hash value and hence point to the same bucket location or array index.
+
+->It can also happen because of the finite size of the underlying array, that is, before resizing. The smaller this array, the 
+higher the chances of collision.
+
+->Keep in mind that it’s the hash value of the key that determines the bucket the object will be stored in. And so, if the hash 
+codes of any two keys collide, their entries will still be stored in the same bucket.
+
+->And by default, the implementation uses a linked list as the bucket implementation.
+
+->The initially constant time O(1) put and get operations will occur in linear time O(n) in the case of a collision. This is 
+because after finding the bucket location with the final hash value, each of the keys at this location will be compared with 
+the provided key object using the equals API.
+
+Steps to reduce hashing collision:-
+->One way to avoid collisions is to choose a large enough hash table size.(Less size more collisions)
+->Chaining: 
+		Although the hash function should minimize the collision, if it still happens then we can use an array of LinkedList 
+		as a hash table to store data, the fundamental idea is for each hash table slot to point to a linked list of records 
+		with the same hash value. This technique is called chaining type of hashing in java.
+->Double Hashing in java: 
+		As the name suggest, it uses two hash functions to resolve collision
