@@ -1,0 +1,71 @@
+HTTP Status Code
+================
+
+	The Status-Code element in a server response, is a 3-digit integer where the first digit of the Status-Code defines 
+	the class of response and the last two digits do not have any categorization role. 
+	There are 5 values for the first digit:
+	
+		1xx: Informational
+		2xx: Success
+		3xx: Redirection
+		4xx: Client Error
+		5xx: Server Error
+
+1xx: Informational
+------------------
+	It means the request has been received and the process is continuing.
+
+2	2xx: Success
+----------------
+	It means the action was successfully received, understood, and accepted.
+
+3	3xx: Redirection
+--------------------
+	It means further action must be taken in order to complete the request.
+
+4	4xx: Client Error
+---------------------
+	It means the request contains incorrect syntax or cannot be fulfilled.
+
+5	5xx: Server Error
+---------------------
+	It means the server failed to fulfill an apparently valid request.
+	
+	
+	
+Information responses
+=====================
+	100 		Continue, This interim response indicates that the client should continue the request or ignore the 
+				response if the request is already finished.
+	
+2xx: Successful
+===============
+	200 		OK, The request is OK.
+	201 		Created, The request is complete, and a new resource is created .
+	202 		Accepted, The request is accepted for processing, but the processing is not complete.
+	
+	
+4xx: Client Error
+=================
+	400 		Bad Request	The server did not understand the request.
+	401 		Unauthorized, The requested page needs a username and a password.
+	402 		Payment Required	You can not use this code yet.
+	403 		Forbidden, Access is forbidden to the requested page.
+	404 		Not Found, The server can not find the requested page.
+	405 		Method Not Allowed, The method(HTTP method) specified in the request is not allowed.
+	406 		Not Acceptable, The server can only generate a response that is not accepted by the client. Like (Accept header)
+	407 		Proxy Authentication Required, You must authenticate with a proxy server before this request can be served.
+	408 		Request Timeout, The request took longer than the server was prepared to wait.
+	417 		Expectation Failed, The expectation given in an Expect request-header field could not be met by this server.
+	
+	
+	
+	
+5xx: Server Error
+=================
+	500 		Internal Server Error	The request was not completed. The server met an unexpected condition.
+	501 		Not Implemented	The request was not completed. The server did not support the functionality required.
+	502 		Bad Gateway	The request was not completed. The server received an invalid response from the upstream server.
+	503 		Service Unavailable	The request was not completed. The server is temporarily overloading or down.
+	504 		Gateway Timeout	The gateway has timed out.
+	505 		HTTP Version Not Supported	The server does not support the "http protocol" version.
