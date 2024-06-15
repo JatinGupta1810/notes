@@ -60,9 +60,9 @@ Thanks & Regards
 
 Linkedin: (Hiring Manager)
 
-Hi ,
+Hi,
 
-I am currently looking for a Java software engineer role. I've over 2.9 years of experience at TCS in Java 8, Spring Boot, Microservice, Rest APIs, JPA, MySQL, and Hibernate. Is there any position present in your company for a Java role?
+I am currently looking for a Java software developer role. I've over 2.9 years of experience at TCS in Java 8, Spring Boot, Microservice, Rest APIs, JPA, MySQL, and Hibernate. Is there any position present in your company for a Java role?
 Can you please help me out here?
 
 Thanks & Regards
@@ -79,6 +79,9 @@ I am working as a Java developer with over 2.9 years of experience at TCS, with 
 
 *********************************************************************
 *********************************************************************
+
+I am working as a Java developer with over 2.9 years of experience at TCS, with hands-on experience in Java 8, Spring Boot, and microservices. Please have a look on my profile.
+
 
 1. I am working on a project for a Natwest client.
 2. Designed, implemented, and maintained RESTful APIs using the Spring Boot framework.
