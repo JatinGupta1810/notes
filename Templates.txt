@@ -7,6 +7,7 @@ Swami Keshvanand Institute of Technology, Management & Gramothan, Jaipur
 Tata Consultancy Services
 https://www.linkedin.com/in/jatingupta18/
 Career opportunity, Better Enhancement, Career Growth
+aXB12@17
 
 *********************************************************************
 *********************************************************************
@@ -62,8 +63,7 @@ Linkedin: (Hiring Manager)
 
 Hi,
 
-I am currently looking for a Java software developer role. I've over 2.9 years of experience at TCS in Java 8, Spring Boot, Microservice, Rest APIs, JPA, MySQL, and Hibernate. Is there any position present in your company for a Java role?
-Can you please help me out here?
+I am currently looking for a Java software developer role. I've over 3 years of experience at TCS in Java 8, Spring Boot, Microservice, Rest APIs, JPA, MySQL, and Hibernate. Is there an open position for a Java role?
 
 Thanks & Regards
 
@@ -83,17 +83,17 @@ I am working as a Java developer with over 2.9 years of experience at TCS, with 
 I am working as a Java developer with over 2.9 years of experience at TCS, with hands-on experience in Java 8, Spring Boot, and microservices. Please have a look on my profile.
 
 
-1. I am working on a project for a Natwest client.
-2. Designed, implemented, and maintained RESTful APIs using the Spring Boot framework.
-3. Resolved complex technical issues through effective problem-solving techniques and root cause analysis.
-4. Implemented new features and enhancements to existing APIs.
-5. Integrated third-party services and APIs to enhance application functionality and the user experience.
-6. Implemented security features such as authentication through JWT.
-7. Integrated with the Payit service for payment and the Wealth Service for investment.
-8. Optimized application performance by identifying code.
-9. Conducted code reviews to ensure code quality and project alignment with business requirements.
-10. Used JUnit and Mockito for unit testing, achieving high code coverage and reliability.
-11. Integrated Swagger for API documentation facilitates easy consumption by frontend developers
+-> I worked for a Natwest client.
+-> Designed, implemented, and maintained RESTful APIs using the Spring Boot framework.
+-> Resolved complex technical issues through effective problem-solving techniques and root cause analysis.
+-> Implemented new features and enhancements to existing APIs.
+-> Integrated third-party services and APIs to enhance application functionality and the user experience.
+-> Implemented security features such as authentication through JWT.
+-> Integrated with the Payit service for payment and the Wealth Service for investment.
+-> Optimized application performance by identifying code.
+-> Conducted code reviews to ensure code quality and project alignment with business requirements.
+-> Used JUnit and Mockito for unit testing, achieving high code coverage and reliability.
+-> Integrated Swagger for API documentation facilitates easy consumption by frontend developers
 
 *********************************************************************
 *********************************************************************
