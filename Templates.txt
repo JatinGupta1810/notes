@@ -63,9 +63,9 @@ Linkedin: (Hiring Manager)
 
 Hi,
 
-I am currently looking for a Java software developer role. I've over 3 years of experience at TCS in Java 8, Spring Boot, Microservice, Rest APIs, JPA, MySQL, and Hibernate. Is there an open position for a Java role?
+I am currently looking for a backend Java developer role. I've over 3 years of experience at TCS in Java 8, Spring Boot, Microservice, Rest APIs, JPA, MySQL, and Hibernate. I am currently serving notice. Is there an open position for a Java role?
 
-Thanks & Regards
+
 
 *********************************************************************
 *********************************************************************
