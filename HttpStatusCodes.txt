@@ -43,6 +43,7 @@ Information responses
 	200 		OK, The request is OK.
 	201 		Created, The request is complete, and a new resource is created .
 	202 		Accepted, The request is accepted for processing, but the processing is not complete.
+	204		No Content available but request is correct.
 	
 	
 4xx: Client Error

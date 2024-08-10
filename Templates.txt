@@ -33,17 +33,19 @@ Jatin Gupta
 
 Linkedin:(Referral)
 
-Hi [Name of Person]
+Hi
 
-I am reaching out to you to ask if you can refer me for the [job ID].
+I am reaching out to you to ask if you can refer me for the Job ID 40411-en_US.
 
-I have over 2.9 years of experience working at Tata Consultancy Service (TCS), and I am highly proficient in Java 8, Spring Boot, Microservices, JPA, Spring, Hibernate, MySQL, Multithreading, and Spring Security.
+I have over 3 years of experience working at Tata Consultancy Service (TCS), and I am highly proficient in Java 8, Spring Boot, Microservices, JPA, Spring, Hibernate, MySQL, Multithreading, and Spring Security.
 
 I am attaching my resume with this message.
 
-Kindly review it and see if you can refer me for the [Job ID]. 
+Kindly review it and see if you can refer me for the Job ID 40411-en_US. 
 
 Thanks & Regards
+
+Ref Id: 40411-en_US
 
 *********************************************************************
 *********************************************************************
