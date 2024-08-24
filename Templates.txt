@@ -5,28 +5,12 @@ guptajatin2610@gmail.com
 American International School, Jaipur
 Swami Keshvanand Institute of Technology, Management & Gramothan, Jaipur
 Tata Consultancy Services
+Bachelor of Technology
+Sector 22B
+Mechanical Engineer
 https://www.linkedin.com/in/jatingupta18/
 Career opportunity, Better Enhancement, Career Growth
 aXB12@17
-
-*********************************************************************
-*********************************************************************
-
-Email:
-
-Subject: Application for Java Software Engineer
-
-Hi ,
-
-I am writing to express my interest in the Java Developer position at [Company Name]. With over 2.9 years of experience as a Java Software Engineer at Tata Consultancy Service (TCS), I am eager to contribute to your team.
-
-Having hands-on experience with Java 8, Spring Boot, Microservices, JPA, Servlet, Hibernate, Rest APIs, MySQL, Collections, Multithreading, and Spring Security, I am confident in my ability to make valuable contributions to [Company Name]. Please find attached my resume for your consideration.
-I am keen on discussing how my background and experience align with the needs of [Company Name] in more detail.
-
-Thank you for considering my application.
-
-Best regards,
-Jatin Gupta
 
 *********************************************************************
 *********************************************************************
@@ -37,7 +21,7 @@ Hi
 
 I am reaching out to you to ask if you can refer me for the Job ID 40411-en_US.
 
-I have over 3 years of experience working at Tata Consultancy Service (TCS), and I am highly proficient in Java 8, Spring Boot, Microservices, JPA, Spring, Hibernate, MySQL, Multithreading, and Spring Security.
+I have over 3 years of experience working at Tata Consultancy Service (TCS), and I am highly proficient in Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API.
 
 I am attaching my resume with this message.
 
@@ -50,69 +34,77 @@ Ref Id: 40411-en_US
 *********************************************************************
 *********************************************************************
 
+
 Linkedin: (Connection for Referral)
 
 Hi [Person Name],
 
-I am reaching out to you to ask if you can refer me in you company. I am looking for a Java Software Engineer role. I've over 2.9 years of experience at Tata Consultancy Service (TCS) in Java 8, Spring Boot, Microservice, Rest APIs, JPA, and Hibernate.
+I am reaching out to you to ask if you can refer me in you company. I am looking for a Java Software Engineer role. I've over 2.9 years of experience at Tata Consultancy Service (TCS) in Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API.
 
-Thanks & Regards
+Best regards,
+Jatin Gupta
 
 *********************************************************************
 *********************************************************************
-
-Linkedin: (Hiring Manager)
 
 Hi,
+ 
+I am looking for a new opportunity as a Java developer. I have 3+ years of experience at TCS. Currently, I am on notice period. I am highly proficient in Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API. Is there any open position in your organization?
 
-I am currently looking for a backend Java developer role. I've over 3 years of experience at TCS in Java 8, Spring Boot, Microservice, Rest APIs, JPA, MySQL, and Hibernate. I am currently serving notice. Is there an open position for a Java role?
-
-
-
-*********************************************************************
-*********************************************************************
-
-I am working at TCS as a Java developer with over 2.9 years of experience. I am having hands-on experience with Java 8, Springboot, and microservices. Please take a look at my profile for job changes.
+Best regards,
+Jatin Gupta
 
 *********************************************************************
 *********************************************************************
 
-I am working as a Java developer with over 2.9 years of experience at TCS, with hands-on experience in Java 8, Spring Boot, and microservices.
+Working as a Java developer with 3+ years of experience. I am highly proficient in Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API.
+Currently, I am on notice period.
+Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API.
 
 *********************************************************************
 *********************************************************************
 
-I am working as a Java developer with over 2.9 years of experience at TCS, with hands-on experience in Java 8, Spring Boot, and microservices. Please have a look on my profile.
+Application for Java Developer
+Hi ,
 
+I am writing to express my interest in the Java Developer position. With over 3 years of experience as a Java Developer, I am eager to contribute to your team. Currently, I am serving notice period at Tata Consultancy Services(TCS).
 
--> I worked for a Natwest client.
--> Designed, implemented, and maintained RESTful APIs using the Spring Boot framework.
--> Resolved complex technical issues through effective problem-solving techniques and root cause analysis.
--> Implemented new features and enhancements to existing APIs.
--> Integrated third-party services and APIs to enhance application functionality and the user experience.
--> Implemented security features such as authentication through JWT.
--> Integrated with the Payit service for payment and the Wealth Service for investment.
--> Optimized application performance by identifying code.
--> Conducted code reviews to ensure code quality and project alignment with business requirements.
--> Used JUnit and Mockito for unit testing, achieving high code coverage and reliability.
--> Integrated Swagger for API documentation facilitates easy consumption by frontend developers
+Proficient in Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API, I am confident in my ability to make valuable contributions to your organization. Please find attached resume for your consideration.
+I am keen on discussing how my background and experience align with the needs of your organization in more detail.
+
+Thank you for considering my application.
+
+Best regards,
+Jatin Gupta
 
 *********************************************************************
 *********************************************************************
 
-I had been working with a great team in my company and learned a lot, and I want to learn more complex technology, which my organization is unable to provide.
+Natwest Client
+1. Designed, implemented, and maintained RESTful APIs using the Spring Boot framework.
+2. Resolved complex technical issues through effective problem-solving techniques and root 
+   cause analysis.
+3. Implemented new features and enhancements to existing APIs.
+4. Integrated third-party services and APIs to enhance application functionality and the user experience.
+5. Implemented security features such as authentication through JWT.
+6. Integrated with the Payit service for payment and the Wealth Service for investment.
+7. Optimized application performance by identifying code.
+8. Conducted code reviews to ensure code quality and project alignment with business 
+   requirements.
+9. Used JUnit and Mockito for unit testing, achieving high code coverage and reliability.
+10. Integrated Swagger for API documentation facilitates easy consumption by frontend developers.
 
+Barclays Client
+1. Working on the BOOST (Barclays onboarding on smart technology) applications to onboard clients.
+2. Responsible for maintaining and enhancing the application life cycle.
+3. Responsible for fixing security vulnerabilities using veracode
 
-
-
-
-
-
-
-
-
+*********************************************************************
+*********************************************************************
 
 Managerial round:
+
+I had been working with a great team in my company and learned a lot, and I want to learn more complex technology, which my organization is unable to provide.
 
 Can you please talk about your strength and weaknesses?
 My strength is that I love to learn new skills, to be self-motivated and flexible, and to work with team members so I can learn their approaches to solving any complex problem.
@@ -125,3 +117,7 @@ Why Looking For a Job Change?
 
 I have learned a lot from my current company, but my current job no longer provides the challenges and opportunities for growth that I seek.
 I am looking for a role where I can continue to expand my skills, take on new responsibilities, and make a meaningful contribution.
+
+*********************************************************************
+*********************************************************************
+
