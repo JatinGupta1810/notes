@@ -20,9 +20,9 @@ Why Looking For a Job Change?
 
 How do you set priorities for your team and yourself at work?
  
-	Make sure every team member has clarity on the objective by discussing priorities regularly
-	Create a list of tasks for every team member using a project management tool
-	Identify urgent and important tasks, and schedule them accordingly
+	1.Make sure every team member has clarity on the objective by discussing priorities regularly.
+	2.Create a list of tasks for every team member using a project management tool.
+	3.Identify urgent and important tasks, and schedule them accordingly.
 	
 ********************************************************************************************************************************************
 
@@ -51,7 +51,49 @@ About Hughes Systique
 	business landscape.
 	
 	*Provide good package to employees based on feedback.
-	*Its a NASSCOM winner for engineering and innovation.
+	*Its a NASSCOM winner(2021) for engineering and innovation.
 	*Provide onsite opportunity and worklife balance.
-	
-	
+	*Uses latest technology to improve employees skills.
+
+********************************************************************************************************************************************
+
+My Strength is to learn new skills, self motivate, learn from the my team members and used their approaches to solve complex problem.
+
+My weakness is I can't say no, when I do any task with I am not able to find solution then used to think alot to find solutions.
+
+********************************************************************************************************************************************
+
+Agile
+An iterative approach that emphasizes flexibility, customer feedback, and continuous releases. Agile teams work in cycles of 
+planning, executing, and evaluating, and can incorporate new feedback at each stage. Agile is often a better choice for projects 
+with flexible schedules, or when startups need to deliver products quickly.
+
+Waterfall
+A linear, sequential approach that follows a clearly defined sequence of phases. Waterfall is often a better choice for projects 
+with fixed timelines and concrete deadlines. 
+
+Flexibility
+Agile is more flexible than Waterfall, allowing teams to change the course of a project and incorporate new feedback. 
+Feedback
+Agile provides faster feedback cycles and better visibility and accountability. 
+Delivery
+Agile teams deliver releases faster and can focus on delivering the features with the most value to customers.
+
+Choosing Between Agile and Waterfall
+Waterfall is often suited for projects with well-defined requirements and a clear, unchanging scope. It’s commonly used in 
+industries like construction and manufacturing, where changes are costly and difficult to implement.
+
+Agile is preferred for projects where requirements are expected to evolve and where customer feedback is critical. It’s popular 
+in software development, where rapid iteration and adaptability are advantageous.
+
+
+********************************************************************************************************************************************
+If I get selected what would be my role?
+
+Salil Parekh
+
+********************************************************************************************************************************************
+
+Infosys is a global IT services and consulting company that offers business consulting, information technology, and outsourcing 
+services.
+Infosys has over 317,000 employees and operations in more than 50 countries.

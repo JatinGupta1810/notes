@@ -1,13 +1,20 @@
 *********************************************************************
 *********************************************************************
 
-guptajatin2610@gmail.com
+Serving Notice Period
+LWD: 8th Oct
+
+*********************************************************************
+*********************************************************************
+
+Mechanical Engineer
 American International School, Jaipur
 Swami Keshvanand Institute of Technology, Management & Gramothan, Jaipur
 Tata Consultancy Services
 Bachelor of Technology
 Sector 22B
 Mechanical Engineer
+https://drive.google.com/file/d/1qVD7NM1vROnvK23mKjEC15Ou6oOKWQbw/view?usp=drive_link
 https://www.linkedin.com/in/jatingupta18/
 Career opportunity, Better Enhancement, Career Growth
 aXB12@17
@@ -49,7 +56,7 @@ Jatin Gupta
 
 Hi,
  
-I am looking for a new opportunity as a Java developer. I have 3+ years of experience at TCS. Currently, I am on notice period. I am highly proficient in Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API. Is there any open position in your organization?
+I am looking for a new opportunity as a Java developer. I have 3+ years of experience as a Java Developer. Currently, I am on notice period(LWD: 8 OCT). I am highly proficient in Core Java, Java 8, Spring Boot, Microservices, Rest APIs, MySQL. Is there any open position in your organization?
 
 Best regards,
 Jatin Gupta
@@ -58,16 +65,16 @@ Jatin Gupta
 *********************************************************************
 
 Working as a Java developer with 3+ years of experience. I am highly proficient in Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API.
-Currently, I am on notice period.
+Currently, I am on notice period(LWD: 8th Oct).
 Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API.
 
 *********************************************************************
 *********************************************************************
 
-Application for Java Developer
+Application for Java Developer || Serving Notice Period || LWD: 8th Oct
 Hi ,
 
-I am writing to express my interest in the Java Developer position. With over 3 years of experience as a Java Developer, I am eager to contribute to your team. Currently, I am serving notice period at Tata Consultancy Services(TCS).
+I am writing to express my interest in the Java Developer position. With over 3 years of experience as a Java Developer, I am eager to contribute to your team. Currently, I am serving notice period(LWD: 8 OCT) at Tata Consultancy Services(TCS).
 
 Proficient in Core Java, Java 8, JDBC, Hibernate, Servlet, Spring MVC, Spring Boot, Junit/Mockito, Microservices, Rest APIs, MySQL, Spring Security, Collections, Multithreading, OOPS, Spring Data JPA, and Stream API, I am confident in my ability to make valuable contributions to your organization. Please find attached resume for your consideration.
 I am keen on discussing how my background and experience align with the needs of your organization in more detail.
